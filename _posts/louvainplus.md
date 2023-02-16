@@ -1,7 +1,8 @@
 ---
+layout: post
 title: Improving the Louvain Algorithm for Community Detection with Modularity Maximization
-date: 2023-16-02
-permalink: /blog/2023/16/02/louvain+/
+published: true
+tags: demo markdown blog
 ---
 
 Cet algorithme est une expansion de l'algorithe Louvain, en ajoutant une phase de raffinement et de uncoarsening.
