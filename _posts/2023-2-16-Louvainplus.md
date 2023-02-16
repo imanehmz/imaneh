@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Improving the Louvain Algorithm for Community Detection with Modularity Maximization
+mathjax: true
 ---
-
+{::options parse_block_html="true" /}
 Cet algorithme est une expansion de l'algorithe Louvain, en ajoutant une phase de raffinement et de uncoarsening.
 Les étapes de Louvain+:
 1. Exécuter Louvain et obtenir des graphes grossiers G  et des clustering $C^{1},C^{2},C^{3},...C^{l}$ avec L le plus haut niveau.
