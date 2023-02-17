@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improving the Louvain Algorithm for Community Detection with Modularity Maximization
+title: Improving the Louvain Algorithm for Community Detection with Modularity Maximization [FR]
 mathjax: true
 ---
 {::options parse_block_html="true" /}
