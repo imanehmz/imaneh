@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Improving the Louvain Algorithm for Community Detection with Modularity Maximization [FR]
+title: Discord JS announcement slash command bot with image as argument:Slash commands with attachments
 mathjax: true
 ---
-{::options parse_block_html="true" /}
 There are two types of commands on discord js, message commands and slash commands. As of when I'm writing this article, Slash commands don't support embeds(images, attachments) as arguments, the issue has been raised [here](https://github.com/discord/discord-api-docs/issues/2322), adding this feature was requested, however, the team working on it had a problem in adding it due to some architecture problems.
 
 ## **How do we solve this problem?**
