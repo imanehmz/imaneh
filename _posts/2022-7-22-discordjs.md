@@ -13,7 +13,7 @@ In this article, we'll proceed to create a channel that we'll call `#announce_co
 
 We'll create an `index.js`, `config.js`, `package.json`, and a `deploy_commands.js` files, a folder called `commands` where to put the files of our commands, in this case, we'll put the `announce.js` file inside. Copy the next code into your `package.json` file
 
-```plaintext
+```
 {
     "dependencies": {
         "@discordjs/builders": "^0.9.0",
@@ -30,7 +30,7 @@ We'll create an `index.js`, `config.js`, `package.json`, and a `deploy_commands.
 
 and run
 
-```plaintext
+```
 npm install
 ```
 
@@ -38,7 +38,7 @@ npm install
 
 Copy this code into your config.json file:
 
-```plaintext
+```
 {
 "DISCORD_TOKEN":"",
     "client_id":"",
@@ -53,7 +53,7 @@ follow the instructions on this [video](https://www.youtube.com/watch?v=JdpJiPlV
 This command has one parameter which is the channel name: the channel where we want to announce, if you have many channels with the same name you can get the id of the channel as a parameter instead of the name.  
 Copy this code into your `deploy_commands.js` file
 
-```plaintext
+```
 const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
@@ -77,7 +77,7 @@ rest.put(Routes.applicationGuildCommands(client_id, guild_id), { body: commands 
 
 Copy this into your `index.js` file :
 
-```plaintext
+```
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const { DISCORD_TOKEN } = require('./config.json');
@@ -127,7 +127,7 @@ client.login(DISCORD_TOKEN);
 It reads the commands from the commands folder, note that the command and the file name should carry the same name.  
 Here's the full code for `Announce.js` file.
 
-```plaintext
+```
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { channel } = require('diagnostics_channel');
 const { MessageEmbed } = require('discord.js');
